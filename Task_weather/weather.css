@@ -1,0 +1,64 @@
+/* styles.css */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #e0f7fa;
+  font-family: Tahoma,;
+  margin: 0;
+  background-image: url("https://images.pexels.com/photos/2909083/pexels-photo-2909083.jpeg?auto=compress&cs=tinysrgb&w=600");
+  background-size: cover;
+  animation: move 10s infinite;
+}
+
+.weather-app {
+  text-align: center;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+ 
+}
+h1{
+  color: rgb(140, 8, 32);
+        text-shadow: 1px 1px 2px black;
+        font-size: 50px;
+
+}
+
+#cityInput {
+  padding: 10px;
+  font-size: 1em;
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 20px;
+  cursor: pointer;
+  margin: 5px;
+  background-color: rgb(95, 170, 216);
+  color:white;
+  border-radius: 9px;
+}
+
+button:hover{
+  color:black;
+  background-color: rgb(45, 45, 212);
+}
+
+#weatherData {
+  margin-top: 20px;
+}
+
+#weatherData p {
+  margin: 5px 0;
+}
+
+@keyframes move{
+  100%{
+    background-position-x: 1700px;
+  }
+
+}

@@ -1,0 +1,227 @@
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #333;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.search-bar {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.search-bar input {
+    width: 60%;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: inline;
+    position: relative;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    position: relative;
+}
+
+.nav-links a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: white;
+    transition: width .3s;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+.nav-links a:hover {
+    color: #ddd;
+    transition: color .3s;
+}
+
+.dropdown-content, .submenu-content {
+    display: none;
+    position: absolute;
+    background-color: #444;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    list-style: none;
+    z-index: 1;
+}
+
+.dropdown-content {
+    top: 100%;
+    left: 0;
+}
+
+.submenu-content {
+    top: 0;
+    left: 100%;
+    margin-left: 10px;
+}
+
+.dropdown:hover .dropdown-content, .dropdown-submenu:hover .submenu-content {
+    display: block;
+}
+
+.dropdown-content a, .submenu-content a {
+    color: white;
+    padding: 8px 12px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover, .submenu-content a:hover {
+    background-color: #555;
+}
+
+@media (max-width: 768px) {
+    .search-bar input {
+        width: 80%;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+        background-color: #444;
+        padding: 10px;
+    }
+
+    .dropdown-content, .submenu-content {
+        position: static;
+        box-shadow: none;
+        padding: 0;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .search-bar input {
+        width: 80%;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+        background-color: #444;
+        padding: 10px;
+    }
+}
+
+.logo-eye{
+  height:7vh;
+  width:7vw;
+  border-radius: 18px;
+  
+  }
+
+
+  .below-cont{
+    background-color: antiquewhite;
+    margin-top: 100px;
+    padding:20px;
+    font-family: Verdana ;
+    padding-bottom: 50px;
+}
+
+body{
+    background-color: #95d5e03c;
+}
+
+
+.contact{
+    font-size: 100px;
+    padding: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.contact-para{
+    font-size: 20px;
+    padding: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+table {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+th {
+    background-color: #f4f4f4;
+}
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+textarea {
+    resize: vertical;
+}
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+.icons{
+    font-size: 70px;
+    padding: auto;
+    margin: 20px;
+    text-align: center;
+   
+}
+i{
+    margin-left: 30px;
+}
+.Address{
+    font-size: 23px;
+    margin-left: 80px;
+}
+
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 8px 0;
+    margin-top: 20px;
+}

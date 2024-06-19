@@ -1,0 +1,249 @@
+ 
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #333;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.search-bar {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.search-bar input {
+    width: 60%;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: inline;
+    position: relative;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    position: relative;
+}
+
+.nav-links a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: white;
+    transition: width .3s;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+.nav-links a:hover {
+    color: #ddd;
+    transition: color .3s;
+}
+
+.dropdown-content, .submenu-content {
+    display: none;
+    position: absolute;
+    background-color: #444;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    list-style: none;
+    z-index: 1;
+}
+
+.dropdown-content {
+    top: 100%;
+    left: 0;
+}
+
+.submenu-content {
+    top: 0;
+    left: 100%;
+    margin-left: 10px;
+}
+
+.dropdown:hover .dropdown-content, .dropdown-submenu:hover .submenu-content {
+    display: block;
+}
+
+.dropdown-content a, .submenu-content a {
+    color: white;
+    padding: 8px 12px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover, .submenu-content a:hover {
+    background-color: #555;
+}
+
+@media (max-width: 768px) {
+    .search-bar input {
+        width: 80%;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+        background-color: #444;
+        padding: 10px;
+    }
+
+    .dropdown-content, .submenu-content {
+        position: static;
+        box-shadow: none;
+        padding: 0;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .search-bar input {
+        width: 80%;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+        background-color: #444;
+        padding: 10px;
+    }
+}
+
+.logo-eye{
+  height:7vh;
+  width:7vw;
+  border-radius: 18px;
+  
+  }
+
+
+  .below-cont{
+    background-color: antiquewhite;
+    margin-top: 100px;
+    padding:20px;
+    font-family: Verdana ;
+    padding-bottom: 50px;
+}
+
+
+body{
+    background-color: #95d5e03c;
+}
+.into{
+    background-image: url("https://plus.unsplash.com/premium_photo-1664478066474-bf0bbed55df5?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    height: 80vh;
+    background-size: cover;
+    border-radius: 20px;
+}
+
+.into-para{
+    border-radius: 25px;    
+    margin: 20px;
+    padding: 10px;
+    position: relative;
+    animation: myintopara 5s;
+}
+.into-head{
+    font-size: 50px;
+    font-family: Serif;
+}
+.into-parag{
+    font-size: 20px;
+    font-family: Cursive;
+    color:rgb(5, 11, 75);
+}
+@keyframes myintopara {
+    0%   {left: 200px;}
+    25%  {left: 2px;}
+
+    }
+
+.provide-head{
+    text-align: center;
+    padding: 5px;
+    margin: 20px;
+    font-size: 60px;
+    font-family: Source Sans Pro;
+    text-decoration: underline;
+    margin-top: 150px;
+    animation: zoom-in-zoom-out 1s ;  
+}
+@keyframes zoom-in-zoom-out {
+    0% {
+      transform: scale(0, 0);
+    }
+    50% {
+      transform: scale(1.5, 1.5);
+    }    
+  }
+.provide-box{
+    text-align: center;
+    background-color: #fff;
+    border-radius: 15px;
+    margin: 20px;
+    padding: 10px;
+    transform: translateX(50%);
+    transition: transform 3s ease-in-out;
+    font-size: 20px;
+ 
+}
+.about-div{
+    margin: 20px;
+    text-align: center;
+    transform: translateX(-50%);
+    transition: transform 2s ease-in-out;
+    margin-top: 100px;
+    
+}
+.about-head{
+    font-size: 55px;
+}
+.about-para{
+    font-size: 20px;
+    font-family: Helvetica;
+}
+.about-image{
+    height: 30vh;
+    width: 10px;
+    border-radius: 50px;
+}
+
+
+
+
+
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 8px 0;
+}
